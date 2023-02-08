@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.mainsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.optionsbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.gridcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-color: black;
+    border-style: groove;
+    height: 606px;
+    width: 768px;
+}
+
+.gridbox {
+    border-color: bisque;
+    border-style: dashed;
+    width: 47.625px;
+    height: 37.5px;
+}
+
+button {
+    height: 50px;
+    width: 75px;
+}
+
+
+.wipe {
+    background-color: white;
+}
