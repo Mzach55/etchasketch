@@ -14,8 +14,11 @@ for (let index = 0; index < boardsize; index++) {
     const container = document.querySelector('.gridcontainer');
     const gridbox = document.createElement('div');
     gridbox.classList.add('gridbox');
-    gridbox.style.width = `${960/num1}px`
-    gridbox.style.height = `${600/num1}px`
+    // gridbox.style.width = `${960/num1}px`
+    // gridbox.style.height = `${600/num1}px`
+    gridbox.style.width = `${100/num1}%`
+    gridbox.style.height = `${100/num1}%`
+
     container.appendChild(gridbox);
 };
 

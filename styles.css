@@ -46,14 +46,16 @@ body {
     justify-content: space-evenly;
     border-color: black;
     border-style: groove;
-    min-height: 606px;
+    /* min-height: 606px;
     min-width: 966px;
     max-width: 966px;
-    max-height: 606px;
+    max-height: 606px; */
     border-top-width: 3px;
     border-left-width: 3px;
     border-right-width: 3px;
     border-bottom-width: 3px;
+    height: 606px;
+    width: 966px;
 }
 
 
