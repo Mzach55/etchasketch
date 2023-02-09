@@ -50,6 +50,10 @@ body {
     min-width: 966px;
     max-width: 966px;
     max-height: 606px;
+    border-top-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
 }
 
 
