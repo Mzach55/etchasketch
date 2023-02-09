@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -46,15 +47,10 @@ body {
     border-color: black;
     border-style: groove;
     height: 606px;
-    width: 768px;
+    width: 966px;
 }
 
-.gridbox {
-    /* border-color: bisque;
-    border-style: dashed; */
-    width: 47.625px;
-    height: 37.5px;
-}
+
 
 button {
     height: 50px;

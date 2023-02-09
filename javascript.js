@@ -1,16 +1,32 @@
-for (let index = 0; index < 256; index++) {
+let valueOne = prompt('what is your value?');
+let num1 = parseFloat(valueOne);
+
+
+
+if (num1 > 100 || num1 < 1) {
+    alert('You must enter an integer between 1 and 100')
+}
+
+
+let boardsize = num1**2
+
+for (let index = 0; index < boardsize; index++) {
     const container = document.querySelector('.gridcontainer');
     const gridbox = document.createElement('div');
     gridbox.classList.add('gridbox');
-    // gridbox.textContent = `${[index]}`;
+    gridbox.style.width = `${960/num1}px`
+    gridbox.style.height = `${600/num1}px`
     container.appendChild(gridbox);
 };
+
+
+
 
 // this will clear the board!
 
 function wipeSketch (e) {
     const wipe = document.querySelectorAll('.gridbox');
-    wipe.forEach(wipe => wipe.setAttribute('style', 'background: white;'));
+    wipe.forEach(wipe => wipe.style.background = 'white');
 }
 
 
