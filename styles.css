@@ -46,8 +46,10 @@ body {
     justify-content: space-evenly;
     border-color: black;
     border-style: groove;
-    height: 606px;
-    width: 966px;
+    min-height: 606px;
+    min-width: 966px;
+    max-width: 966px;
+    max-height: 606px;
 }
 
 
