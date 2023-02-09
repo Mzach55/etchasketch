@@ -50,8 +50,8 @@ body {
 }
 
 .gridbox {
-    border-color: bisque;
-    border-style: dashed;
+    /* border-color: bisque;
+    border-style: dashed; */
     width: 47.625px;
     height: 37.5px;
 }

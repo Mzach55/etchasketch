@@ -4,7 +4,6 @@ for (let index = 0; index < 256; index++) {
     gridbox.classList.add('gridbox');
     // gridbox.textContent = `${[index]}`;
     container.appendChild(gridbox);
-    
 };
 
 // this will clear the board!
@@ -37,21 +36,29 @@ drawing.addEventListener('click', () => {
 
 function placeColor (e) {
     console.log(e)
-    e.target.style.background='black';
+    draw.forEach(draw => draw.addEventListener('mouseover', function(e){
+    if(e.buttons == 1 || e.buttons == 3){
+        e.target.style.background=`${changecolor.value}`;
+        if (pen == false){
+            e.target.style.background='white';
+        }
+    } 
+}));
+}
 
+function singleColor (e){
     if (pen == false) {
-        e.target.style.background='white';
+        e.target.style.background='white'
+    } else {
+        e.target.style.background=`${changecolor.value}`
     }
 }
 
 
 let pen = true;
-
-// selects all gridboxes
 const draw = document.querySelectorAll('.gridbox')
-draw.forEach(draw => draw.addEventListener('mouseover', placeColor));
+draw.forEach(draw => draw.addEventListener('click', singleColor))
+draw.forEach(draw => draw.addEventListener('mousedown', placeColor));
 
-// draw.forEach(draw => draw.addEventListener('click', placeColor));
-
-
+const changecolor = document.querySelector('#colorPicker');
 
